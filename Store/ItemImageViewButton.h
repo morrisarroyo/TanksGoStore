@@ -12,9 +12,10 @@
 #import <UIKit/UIKit.h>
 
 @interface ItemImageViewButton : UIView
-
-- (float) getWidth;
-- (float) getHeight;
+@property (strong, nonatomic) NSString* itemName;
+- (id)initWithFrame:(CGRect)frame withName:(NSString *)name withImage:(UIImage *)image;
+- (NSString *) getItemName;
+//- (UIImage *) getHeight;
 @end
 
 #endif /* ItemImageViewButton_h */
